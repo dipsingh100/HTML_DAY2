@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DAY2</title>
+</head>
+<body>
+    <h3>Q1. Explain br tag?</h3>
+    <p>
+        In HTML, the &lt;br&gt; tag is used to insert a line break or a new line within a paragraph or other text element to create more readable content.. It is a self-closing tag, which means it doesn't require a closing tag like other HTML tags.
+    </p>
+    <hr>
+    <h3>Q2. Explain how many different types of lists we have in html?</h3>
+    <p>
+        There are three main types of lists that you can create in HTML:
+    </p>
+    <ol>
+        <li>Ordered Lists (&lt;ol&gt;): Ordered lists are used to display a list of items in a specific order. Each item is listed with a number or letter that indicates its position in the list. The ordered list is created using the &lt;ol&gt; tag and each list item is created using the &lt;li&gt; tag.</li>
+        <li>Unordered Lists (&lt;ul&gt;): Unordered lists are used to display a list of items that are not in a specific order. Each item is listed with a bullet point or other symbol that indicates its position in the list. The unordered list is created using the &lt;ul&gt; tag and each list item is created using the &lt;li&gt; tag</li>
+        <li>Definition lists (&lt;dl&gt;): This type of list is used to display a list of terms and their definitions The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term:</li>
+    </ol>
+    <hr>
+    <h3>Q3. What are semantic tags?</h3>
+    <p>
+        Semantic tags are HTML tags that are used to describe the content and structure of a web page in a more meaningful way for both humans and search engines. They provide contextual information about the content within the tag, making it easier for web developers and search engines to understand the purpose of each element on the page.
+        <ul>
+            <li>&lt;header&gt;: This tag is used to define the header section of a web page, typically containing the site logo, navigation menu, and other introductory content.</li>
+            <li>&lt;nav&gt;: This tag is used to define the navigation section of a web page, typically containing links to other pages on the site.</li>
+            <li>&lt;main&gt;: This tag is used to define the main content area of a web page.</li>
+        </ul>
+    </p>
+    <hr>
+    <h3>Q4. Write code to create an ordered list with roman numbers?</h3>
+    <p>Ordered list in html is used to create list elements which are following some
+        specific order. Its default type is number or “1”. Other types which it supports
+        are “I” , “i”, “A”, “a”.</p>
+        <pre>
+            &lt;ol type="I"&gt;
+                &lt;li&gt;Apple&lt;/li&gt;
+                &lt;li&gt;Orange&lt;/li&gt;
+                &lt;li&gt;Banana&lt;/li&gt;
+            &lt;/ol&gt;
+        </pre>
+        <b>Output:</b>
+        <ol type="I">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+        </ol>
+    <hr>
+    <h3>Q5. Write code to create an unordered list with circle?</h3>
+    <p>
+        Unordered list in html is used to create list elements which are random in
+fashion. Its default type is bullet or “disc”. Other types which it supports are
+“circle” , “square”, “none”
+    </p>
+    <pre>
+        &lt;ul type="circle"&gt;
+            &lt;li&gt;First&lt;/li&gt;
+            &lt;li&gt;Second&lt;/li&gt;
+            &lt;li&gt;Third&lt;/li&gt;
+            &lt;/ul&gt;
+        </pre>
+        <b>Output:</b>
+        <ul type="circle">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+    <hr>
+    <h3>Q6. Write code to create a link to https://www.prepbytes.com?</h3>
+    <p>To create links in HTML, we use anchor tags. These tags can be used to redirect
+        to a new HTML page and also to a web page. So in href attribute we can give
+        the web page link or we can give the location of the html file we want to load.
+        target = “_blank” you can give when you want to open that page in a new tab.</p>
+        <pre>
+            &lt;h2&gt;Link to go to Prepbytes&lt;/h2&gt;
+            &lt;a href=”https://www.prepbytes.com”&gt;Prepbytes&lt;/a&gt;
+            &lt;a href=”https://www.prepbytes.com”  target=”_blank”&gt;Prepbytes&lt;/a&gt;
+        </pre>
+        <b>Output:</b>
+        <h2>Link to go to Prepbytes</h2>
+        <a href=”https://www.prepbytes.com”>Prepbytes</a>
+        <a href=”https://www.prepbytes.com”  target=”_blank”>Prepbytes</a>
+
+        <hr>
+    <h3>Q7. Write code to create an nested list that contain order list(numeric) first then unorder list(disc) then again one unorder list(square)?</h3>
+    <pre>
+        &lt;ol&gt;
+            &lt;li&gt;First item<&lt;/li&gt;
+            &lt;li&gt;Second item<&lt;/li&gt;
+            &lt;li&gt;Third item<&lt;/li&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Bullet point 1<&lt;/li&gt;
+              &lt;li&gt;Bullet point 2<&lt;/li&gt;
+              &lt;li&gt;Bullet point 3<&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;ul type="square">
+              &lt;li&gt;Square point 1<&lt;/li&gt;
+              &lt;li&gt;Square point 2<&lt;/li&gt;
+              &lt;li&gt;Square point 3<&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/ol&gt;          
+    </pre>
+    <b>Output:</b>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <ul>
+          <li>Bullet point 1</li>
+          <li>Bullet point 2</li>
+          <li>Bullet point 3</li>
+          <ul type='square'>
+              <li>Square point 1</li>
+              <li>Square point 2</li>
+              <li>Square point 3</li>
+            </ul>
+        </ul>
+      </ol>    
+</body>
+</html>
